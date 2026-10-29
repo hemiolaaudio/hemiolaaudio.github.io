@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hemiola Audio: free modules for VCV Rack</title>
+<meta name="description" content="Free, open-source VCV Rack modules, made to be played. Out now: Cycle Clock and R&T.">
+<meta property="og:title" content="Hemiola Audio">
+<meta property="og:description" content="Free, open-source VCV Rack modules, made to be played. Out now: Cycle Clock and R&T.">
+<meta property="og:image" content="https://hemiolaaudio.github.io/assets/social-preview.png">
+<meta property="og:url" content="https://hemiolaaudio.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/mark.png">
+<style>
+@font-face{font-family:Mont;src:url(assets/Montserrat-Light.ttf);font-weight:300;font-display:swap}
+@font-face{font-family:Mont;src:url(assets/Montserrat-Regular.ttf);font-weight:400;font-display:swap}
+@font-face{font-family:Mont;src:url(assets/Montserrat-Medium.ttf);font-weight:500;font-display:swap}
+:root{--paper:#F6F4EE;--panel:#EEEAE2;--ink:#222220;--soft:#6b6a64;--line:#d9d4c7;--accent:#3d5a80}
+@media (prefers-color-scheme:dark){:root{--paper:#1d1d1b;--panel:#262624;--ink:#ecebe6;--soft:#a3a29a;--line:#3a3a36;--accent:#9db7d9}
+.logo{filter:invert(1)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.7 Mont,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--ink);text-decoration-color:var(--line);text-underline-offset:4px}
+a:hover{text-decoration-color:var(--ink)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{padding:28px 0;display:flex;justify-content:space-between;align-items:center}
+header img{height:34px}
+nav a{margin-left:26px;font-size:14px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--soft)}
+nav a:hover{color:var(--ink)}
+.hero{padding:70px 0 90px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero .mark{width:110px}
+.hero h1{font-weight:300;font-size:clamp(34px,5vw,54px);line-height:1.15;margin:30px 0 18px;letter-spacing:.2px}
+.hero p{color:var(--soft);font-size:19px;margin:0 0 30px;max-width:30em}
+.btn{display:inline-block;padding:12px 26px;border:1px solid var(--ink);text-decoration:none;font-size:14px;letter-spacing:.08em;text-transform:uppercase;margin:0 10px 10px 0}
+.btn.fill{background:var(--ink);color:var(--paper)}
+.btn:hover{opacity:.8}
+.panels{display:flex;gap:22px;justify-content:center;align-items:flex-start}
+.panels img{height:min(52vw,440px);box-shadow:0 18px 40px rgba(60,55,40,.2)}
+.panels img+img{margin-top:50px}
+section{padding:70px 0;border-top:1px solid var(--line)}
+h2{font-weight:300;font-size:30px;margin:0 0 30px;letter-spacing:.2px}
+h3{font-weight:500;font-size:20px;margin:0 0 4px}
+.tag{color:var(--soft);font-size:14px;letter-spacing:.08em;text-transform:uppercase;margin:0 0 16px}
+.mods{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.card{background:var(--panel);padding:34px}
+.card img{width:150px;float:right;margin:0 0 12px 20px;box-shadow:0 10px 24px rgba(60,55,40,.18)}
+.card ul{padding-left:18px;margin:14px 0 20px}
+.card li{margin:4px 0}
+.steps{counter-reset:s;padding:0;list-style:none;max-width:40em}
+.steps li{counter-increment:s;padding-left:46px;position:relative;margin:0 0 18px}
+.steps li:before{content:counter(s);position:absolute;left:0;top:2px;width:30px;height:30px;border:1px solid var(--ink);border-radius:50%;text-align:center;line-height:28px;font-size:14px}
+.story{max-width:38em}
+.story p{margin:0 0 20px}
+.follow a{display:inline-block;margin:0 26px 8px 0}
+footer{border-top:1px solid var(--line);padding:36px 0 50px;color:var(--soft);font-size:14px}
+@media (max-width:820px){.hero{grid-template-columns:1fr;padding:30px 0 60px}.mods{grid-template-columns:1fr}.card img{float:none;display:block;margin:0 0 20px}nav{display:none}header img{height:28px}.panels img{height:62vw}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<img class="logo" src="assets/word.png" alt="Hemiola Audio">
+<nav><a href="#modules">Modules</a><a href="#get">Get them</a><a href="#story">Story</a><a href="#follow">Contact</a></nav>
+</header>
+
+<div class="hero">
+<div>
+<img class="mark logo" src="assets/mark.png" alt="">
+<h1>Free modules for VCV Rack, made to be played.</h1>
+<p>Open-source, quiet to look at, careful about timing. Out now: Cycle Clock and R&amp;T, two modules for counting rhythm in whole cycles.</p>
+<a class="btn fill" href="https://github.com/hemiolaaudio/HemiolaAudio/releases/latest">Download</a>
+<a class="btn" href="https://github.com/hemiolaaudio/HemiolaAudio/blob/main/MANUAL.md">Read the manual</a>
+</div>
+<div class="panels">
+<img src="assets/CycleClock.svg" alt="Cycle Clock panel">
+<img src="assets/RhythmTalam.svg" alt="R&amp;T panel">
+</div>
+</div>
+</div>
+
+<section id="modules"><div class="wrap">
+<h2>Out now</h2>
+<div class="mods">
+<div class="card">
+<img src="assets/CycleClock.svg" alt="">
+<p class="tag">14 HP</p>
+<h3>Cycle Clock</h3>
+<p>A clock that counts a whole rhythm cycle, such as a 16-beat thalam or a 7/8 bar, and tells your patch where it is.</p>
+<ul>
+<li>55 cycles: ordinary meters, 7 Hindustani and 35 Carnatic thalams</li>
+<li>Trigger and gate on every beat, section and cycle</li>
+<li>Position voltage, accented click, swing, tempo CV</li>
+</ul>
+<a href="https://github.com/hemiolaaudio/HemiolaAudio/blob/main/docs/CycleClock.md">Cycle Clock manual</a>
+</div>
+<div class="card">
+<img src="assets/RhythmTalam.svg" alt="">
+<p class="tag">10 HP</p>
+<h3>R&amp;T, Rhythm &amp; Thalam</h3>
+<p>Splits every beat into equal parts, the way Carnatic music counts nadai, then divides those parts.</p>
+<ul>
+<li>1 to 9 parts per beat: tisra, chatusra, khanda, misra, sankirna</li>
+<li>DIVIDE from 1 to 64, with its own outputs</li>
+<li>Chance, reset input, division by CV</li>
+</ul>
+<a href="https://github.com/hemiolaaudio/HemiolaAudio/blob/main/docs/RhythmTalam.md">R&amp;T manual</a>
+</div>
+</div>
+</div></section>
+
+<section id="get"><div class="wrap">
+<h2>Get them</h2>
+<ol class="steps">
+<li><strong>Download</strong> the latest file ending in <code>.vcvplugin</code> from the <a href="https://github.com/hemiolaaudio/HemiolaAudio/releases/latest">releases page</a>. It is built for a Mac with Apple silicon.</li>
+<li><strong>Put it</strong> in the <code>plugins-mac-arm64</code> folder inside <code>Documents/Rack2</code>, then start Rack.</li>
+<li><strong>Other computers:</strong> the plugin has been submitted to the VCV Library, which builds it for Windows, Mac and Linux. You can also <a href="https://github.com/hemiolaaudio/HemiolaAudio#build-from-source">build it yourself</a>.</li>
+</ol>
+<p>Two example patches are in the <a href="https://github.com/hemiolaaudio/HemiolaAudio/tree/main/patches">patches folder</a>.</p>
+</div></section>
+
+<section id="story"><div class="wrap story">
+<h2>Three against two</h2>
+<p>A hemiola is the moment three beats lean against two. Rhythms that should not fit, and somehow do, are where this project began.</p>
+<p>Hemiola Audio is one person. I make music in VCV Rack most days, and I kept reaching for things that did not quite exist: a clock that knew it was on beat eleven of sixteen, and a way to cut a beat into five, seven or nine equal parts, the way a Carnatic musician does without thinking.</p>
+<p>I am not a trained programmer. I write the code with an AI assistant, and I decide everything else: what a module is for, how it looks, how it feels under the hands. Every timing rule is checked by machine. Whether it is musical is checked the old way, in a patch, with headphones on.</p>
+<p>The modules are free and open source, and they will stay that way. More are coming, and not all of them will be about rhythm. <a href="https://github.com/hemiolaaudio/HemiolaAudio/blob/main/docs/about.md">Read the longer version.</a></p>
+</div></section>
+
+<section id="follow"><div class="wrap">
+<h2>Tell me what you find</h2>
+<p class="follow">
+<a href="https://github.com/hemiolaaudio">GitHub</a>
+<a href="mailto:hemiolaaudio@gmail.com">hemiolaaudio@gmail.com</a>
+</p>
+<p>Found something wrong, or a thalam grouping that does not match what you were taught? <a href="https://github.com/hemiolaaudio/HemiolaAudio/issues/new/choose">Open an issue</a> or write to me. I read everything.</p>
+</div></section>
+
+<footer><div class="wrap">
+Free software under the GNU General Public License, version 3 or later. Panel lettering is Montserrat, under the SIL Open Font Licence. Hemiola Audio is not affiliated with VCV.
+</div></footer>
+</body></html>
